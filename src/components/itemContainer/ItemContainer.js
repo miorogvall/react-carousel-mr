@@ -1,11 +1,15 @@
 import React from 'react';
 import './_itemContainer.scss';
 import Item from './Item/Item'
-import NavArrow from '../navArrow/navArrow'
-
-function ItemContainer() {
-  return (
-      <div className="item-container">
+class ItemContainer extends React.Component {
+    constructor(props) {
+      super(props);
+    }
+    handleClick() {
+        console.log('hej')
+    }
+  render() {
+      return <div className="item-container">
           <Item></Item>
           <Item></Item>
           <Item></Item>
@@ -14,11 +18,9 @@ function ItemContainer() {
           <Item></Item>
           <Item></Item>
 
-
-          <NavArrow dir="left"></NavArrow>
-          <NavArrow dir="right"></NavArrow>
+          <div className="fas fa-arrow-left arrow left" onClick={this.handleClick}></div>
+          <div className="fas fa-arrow-right arrow right" onClick={this.handleClick}></div>
       </div>
-  );
 }
-
+}
 export default ItemContainer;
