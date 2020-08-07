@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import ItemContainer from './components/itemContainer/ItemContainer'
 import './App.css';
+import {List} from './Images';
 
 function App() {
+  console.log(List)
   return (
     <div className="App">
-      <ItemContainer></ItemContainer>
+      <ItemContainer children={List}/>
     </div>
   );
 }

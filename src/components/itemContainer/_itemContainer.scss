@@ -9,15 +9,23 @@
     height: 100vh;
     width: 100%;
     overflow: hidden;
+
+    .items {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0,0);
+    }
     
     .arrow {
-        background: $light-grey;
+        background: #f8f8f8;
         width: 50px;
         height: 50px;
         position: absolute;
         top: 50%;
         border-radius: 100%;
-        transform: translate(0px, -50px);
+        transform: translate(0px, -50%);
         display: flex;
         align-items: center;
         justify-content: center;

@@ -1,9 +1,11 @@
+@import '../../../master.scss';
+
 .item {
     width: 90%;
     flex: 0 0 auto;
-    height: 65vw;
-    background-color: red;
+    height: 70vw;
+    background-color: $light-grey;
     border: 2px solid black;
     min-width: 90%;
-    max-height: 650px;
+    max-height: 575px;
 }
