@@ -5,13 +5,17 @@
     flex: 0 0 auto;
     height: 70vw;
     background-color: $light-grey;
-    border: 2px solid black;
     min-width: 90%;
     max-height: 575px;
     transform: scale(0.8);
     transition: all 0.2s ease;
+    opacity: 0.4;
+    -webkit-box-shadow: 0px 0px 55px -16px #0000001f;
+    -moz-box-shadow: 0px 0px 55px -16px #0000001f;
+    box-shadow: 0px 0px 55px 21px #0000001f;
 
     &.active {
         transform: scale(1);
+        opacity: 1;
     }
 }

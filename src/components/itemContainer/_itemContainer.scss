@@ -22,7 +22,8 @@
     }
     
     .arrow {
-        background: #f8f8f8;
+        background: $light-grey;
+        color: $black;
         width: 50px;
         height: 50px;
         position: absolute;
@@ -35,6 +36,9 @@
         font-size: 27px;
         cursor: pointer;
         transition: opacity 0.11s ease-out;
+        -webkit-box-shadow: 0px 0px 17px -8px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 17px -8px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 17px -8px rgba(0,0,0,0.75);
 
         &.left {
             left: 25px;
