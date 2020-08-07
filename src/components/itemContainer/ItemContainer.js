@@ -9,7 +9,6 @@ class ItemContainer extends React.Component {
           leftInteractable: false,
           rightInteractable: true
         }
-
     }
 
     handleClick = (event) => {
@@ -30,7 +29,6 @@ class ItemContainer extends React.Component {
                 })
             }
         }
-
     }
 
     render() {
