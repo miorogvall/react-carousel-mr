@@ -41,6 +41,9 @@ class ItemContainer extends React.Component {
                     filename={data.filename}
                     description={data.description}
                     dimensions={data.dimensions}
+                    name={data.name}
+                    bathrooms={data.bathrooms}
+                    rooms={data.rooms}
                     key={data.id}
                     activeNr={data.activeNr}
                     activeSlide={this.state.count}/>
