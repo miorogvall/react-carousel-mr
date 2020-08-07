@@ -41,6 +41,7 @@ let List = [
     dimensions : 73,
     description : "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus",
     activeNr: 5,
+    bathrooms: '3',
     rooms: '4'
     }
 ]

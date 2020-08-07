@@ -4,7 +4,6 @@ import './_Item.scss';
 class Item extends React.Component {
 
   render() {
-    console.log(this.props.filename)
     let classList;
   if(this.props.activeNr === this.props.activeSlide) {
      classList = 'item active'

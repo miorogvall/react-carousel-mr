@@ -4,7 +4,6 @@ import './App.css';
 import {List} from './Images';
 
 function App() {
-  console.log(List)
   return (
     <div className="App">
       <ItemContainer children={List}/>

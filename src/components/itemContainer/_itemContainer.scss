@@ -19,6 +19,7 @@
         transition: all 0.2s ease;
         justify-content: flex-start;
         margin-left: 10%;
+        margin-top: -200px;
     }
     
     .arrow {
@@ -39,6 +40,7 @@
         -webkit-box-shadow: 0px 0px 17px -8px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 0px 17px -8px rgba(0,0,0,0.75);
         box-shadow: 0px 0px 17px -8px rgba(0,0,0,0.75);
+        margin-top: -100px;
 
         &.left {
             left: 25px;
@@ -50,6 +52,8 @@
 
         &:hover {
             opacity: 0.9;
+            background: $black;
+            color: $light-grey;
         }
     }
 }
