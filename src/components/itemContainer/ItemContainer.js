@@ -4,27 +4,41 @@ import Item from './Item/Item'
 class ItemContainer extends React.Component {
     constructor(props) {
       super(props);
+      this.state = {count: 1}
     }
+
     handleClick = (event) => {
-        let itemScroll = 0;
-        let getCurrentTransform = event.target.parentNode.childNodes[0].style.color
-        console.log(getCurrentTransform)
-        /*  if(event.target.classList.contains('right')) {
-             event.target.parentNode.childNodes[0].style = 'transform: translate(100%, 0)'
+        console.log(event.target.parentNode.childNodes[0].childNodes)
+        let currentTransform = event.target.parentNode.childNodes[0].style.transform.replace(/[^0-9\-]/g,'');
+            if(event.target.classList.contains('right')) {
+                if(this.state.count !== event.target.parentNode.childNodes[0].childNodes.length) {
+                    this.setState({
+                        count : this.state.count + 1
+                    })
+                    event.target.parentNode.childNodes[0].style = `transform: translate(${parseInt(currentTransform) - 90}%)`
+                }
             } else {
-            } */
+                if(this.state.count !== 1) {
+                event.target.parentNode.childNodes[0].style = `transform: translate(${parseInt(currentTransform) + 90}%)`
+                this.setState({
+                    count : this.state.count - 1
+                })
+            }
+        }
     }
+
     render() {
         return <div className="item-container">
 
-        <div className="items">
+        <div className="items" style={{transform: 'translate(0%)'}}>
             {this.props.children.map((data) => {
                 return <Item
                     filename={data.filename}
                     description={data.description}
                     dimensions={data.dimensions}
                     key={data.id}
-                    active={data.active}/>
+                    activeNr={data.activeNr}
+                    activeSlide={this.state.count}/>
                 })
             }
         </div>

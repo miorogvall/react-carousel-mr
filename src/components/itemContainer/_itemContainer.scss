@@ -16,6 +16,9 @@
         justify-content: center;
         align-items: center;
         transform: translate(0,0);
+        transition: all 0.2s ease;
+        justify-content: flex-start;
+        margin-left: 10%;
     }
     
     .arrow {

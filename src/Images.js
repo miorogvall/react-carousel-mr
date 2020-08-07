@@ -3,31 +3,31 @@ let List = [
     filename : "0.jpg",
     dimensions :73,
     description : "hello, world!",
-    active: true
+    activeNr: 1
     },
     {
     filename : "1.jpg",
     rdimensions : 73,
     description : "hello, world!",
-    active: false
+    activeNr: 2
     },
     {
     filename : "1.jpg",
     rdimensions : 73,
     description : "hello, world!",
-    active: false
+    activeNr: 3
     },
     {
     filename : "1.jpg",
     rdimensions : 73,
     description : "hello, world!",
-    active: false
+    activeNr: 4
     },
     {
     filename : "1.jpg",
     rdimensions : 73,
     description : "hello, world!",
-    active: false
+    activeNr: 5
     }
 ]
 

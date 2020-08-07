@@ -7,7 +7,13 @@ class Item extends React.Component {
   }
 
   render() {
-  return <div className="item">{this.props.filename}</div>
+    let classList;
+  if(this.props.activeNr === this.props.activeSlide) {
+     classList = 'item active'
+  } else {
+      classList = 'item'
+  }
+return <div className={classList}>{this.props.filename}</div>
   }
   }
 
