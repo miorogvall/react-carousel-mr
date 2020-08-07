@@ -27,9 +27,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 The slider is build using create-react-app. It was tested only on Chrome on Windows 10. Recommended viewing is on desktop with a larger screen then 1024x768(no time for responsive fixes). I chose a bit more unconventional design then say, a landing page, with more focus on the contrast between current photo and next/previous. I added a bit more playfulness to the animations. I added some sample texts about each photo to fill out the empty space. I did this design to try and make it as clean as possible for an exclusive feel. Perhaps it would be suitable not for a landing page but rather an art-portfolio or a premium broker website, for exampel when viewing photos from an object this design could be on an overlay.
 
 ### Features that would be good
-left and right tabs are disabled when using is at last or first slide.
+left and right tabs are disabled when viewing last or first slide.
 
-Navigation 'dots' that highlight the current photo in the order, these dots would be an options for navigation also.
+Navigation 'dots' that highlight the current photo in the order, these dots would be an option for navigation also.
 
 light and dark viewing mode.
 
